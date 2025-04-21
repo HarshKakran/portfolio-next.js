@@ -1,5 +1,5 @@
 # Node modules
-node_modules
+/node_modules
 
 # Next.js build output
 .next
@@ -8,11 +8,6 @@ out
 # Production
 build
 /public/static/
-
-# Dependency directories
-/pnpm-lock.yaml
-/yarn.lock
-/package-lock.json
 
 # IDE and Editor directories
 .idea/
