@@ -1,12 +1,12 @@
 # Node modules
-node_modules*
+node_modules
 
 # Next.js build output
-/.next/
-/out/
+.next
+out
 
 # Production
-/build/
+build
 /public/static/
 
 # Dependency directories
@@ -15,10 +15,10 @@ node_modules*
 /package-lock.json
 
 # IDE and Editor directories
-/.idea/
-/.vscode/
-/*.swp
-/.DS_Store
+.idea/
+.vscode/
+*.swp
+.DS_Store
 
 # Logs
 npm-debug.log*
