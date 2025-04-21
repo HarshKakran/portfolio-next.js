@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Edi",
+      "description": "A terminal-based text editor built from scratch in Go using only the Go standard library.",
+      "tech": ["Golang", "TUI", "CLI"],
+      "github": "https://github.com/HarshKakran/edi",
+      "link": "",
+       "image": "/images/projects/ecommerce.jpg"
+    },
+    {
+      "title": "Neer",
+      "description": "Backend for an automated water body cleaning bot using Django, YOLO, and PostgreSQL.",
+      "tech": ["Django", "PostgreSQL", "YOLO", "REST API"],
+      "github": "https://github.com/HarshKakran/neer",
+      "link": ""
+    },
+    {
+      "title": "Drowsiness Detector",
+      "description": "A real-time driver fatigue detection system using facial landmarks and OpenCV.",
+      "tech": ["Python", "OpenCV", "Dlib"],
+      "github": "https://github.com/HarshKakran/drowsiness-detector",
+      "link": "",
+      "image": "/images/projects/dashboard.jpg"
+    }
+  ]
+  

@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Software Development Engineer",
+    "company": "Airtel Digital",
+    "location": "Gurugram, India",
+    "startDate": "2023-10-01",
+    "endDate": "Present",
+    "responsibilities": [
+      "Designed and delivered the FE Exit Management module, automating status transitions and improving inventory workflows",
+      "Built a retry mechanism that resolved over 10,000 stuck orders, eliminating manual intervention",
+      "Developed a security deposit-based inventory allocation system for third-party distributors",
+      "Integrated serial and RMA tracking with ERP systems, achieving full traceability",
+      "Created a centralized transaction table across multiple journeys, improving data consistency and operational visibility",
+      "Resolved 1,200+ user-reported issues and revamped error handling across key application journeys",
+      "Collaborated on OIM Integration and cross-functional initiatives, ensuring smooth rollout across platforms"
+    ],
+    "technologies": ["Golang", "PostgreSQL", "Redis", "Kubernetes", "Docker", "Kafka"]
+  },
+  {
+    "title": "Software Development Intern",
+    "company": "Consights Tech Pvt. Ltd.",
+    "location": "Remote",
+    "startDate": "2022-05-01",
+    "endDate": "2022-07-31",
+    "responsibilities": [
+      "Developed RESTful APIs using Django and Django REST Framework for fintech operations",
+      "Built responsive UI components with ReactJS to support client-facing dashboards",
+      "Implemented image processing workflows using Pillow and Django ImageKit",
+      "Collaborated with the product team to design and ship features in an Agile environment"
+    ],
+    "technologies": ["Python", "Django", "Django REST Framework", "ReactJS", "Pillow"]
+  }
+]

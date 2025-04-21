@@ -1,0 +1,36 @@
+{
+  "name": "Harsh Kumar",
+  "title": "Software Engineer",
+  "email": "harshkakran05@gmail.com",
+  "phone": "+91 9802242548",
+  "location": "India",
+  "siteUrl": "https://harshkakran.dev",
+  "description": "Backend engineer passionate about building scalable systems and solving real-world problems through clean, efficient code.",
+  "greeting": "Hi, I'm",
+  "tagline": "I build reliable systems with Golang, Python, and C++.",
+  "bio": "I'm a backend engineer with a strong focus on system design and automation. At Airtel Digital, I’ve led critical projects involving distributed systems, retry mechanisms, and ERP integrations. I thrive in performance-critical environments and love designing scalable architectures.",
+  "bioExtended": "Beyond my professional work, I enjoy participating in hackathons, building open-source projects, and continuously sharpening my problem-solving skills. I’m currently exploring low-level development and AI systems while refining my understanding of cloud-native architectures.",
+  "github": "https://github.com/HarshKakran",
+  "linkedin": "https://linkedin.com/in/harshkakran",
+  "twitter": "",
+  "skills": {
+    "languages": ["Golang", "Python", "C++", "JavaScript", "HTML", "CSS"],
+    "frameworks": ["Gin", "Django", "React", "Tailwind CSS"],
+    "tools": ["Git", "Docker", "Kubernetes", "Redis", "Kafka"],
+    "other": ["RESTful APIs", "PostgreSQL", "CI/CD", "System Design", "Microservices"]
+  },
+  "highlights": [
+    {
+      "title": "Hackathon Winner",
+      "description": "Won multiple hackathons including SIH 2022, Innovate for India, and HackHC (Best AI Hack)."
+    },
+    {
+      "title": "Open Source Builder",
+      "description": "Creator of Edi – a terminal-based text editor written in Go, and contributor to projects like Neer and Drowsiness Detector."
+    },
+    {
+      "title": "Leadership Experience",
+      "description": "Held leadership roles at NIT Kurukshetra including Secretary of ELAD and Management Head of the Alumni Association Student Body."
+    }
+  ]
+}
