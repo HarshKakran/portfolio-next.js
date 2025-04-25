@@ -1,0 +1,24 @@
+{
+ "name": "Harsh Kumar - Portfolio",
+  "short_name": "Harsh",
+  "description": "Portfolio of Harsh Kumar - Full Stack Developer and Technical Writer",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#3B82F6",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

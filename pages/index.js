@@ -26,6 +26,7 @@ export default function Home() {
         <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png.svg" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <meta name="theme-color" content="#3B82F6" />
         
         {/* Open Graph tags for social sharing */}
