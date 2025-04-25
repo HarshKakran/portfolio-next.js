@@ -66,3 +66,49 @@ body, .transition-theme {
 .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
 .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
 .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* Image loading and transitions */
+.image-transition {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.image-loading {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.image-loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Profile image glow effect */
+.profile-glow {
+  position: relative;
+}
+
+.profile-glow::after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.5), rgba(79, 70, 229, 0.5));
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.6;
+  animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}

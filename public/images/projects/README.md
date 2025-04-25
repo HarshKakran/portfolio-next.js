@@ -1,28 +1,15 @@
-# Project Images Directory
+# Profile Image Directory
 
-This directory is for project images that can be referenced in the `projects.json` file.
+This directory is for your profile image that will be displayed on the home page.
 
-## How to Use
+## Instructions
 
-1. Add your project image to this directory
-2. In your `data/projects.json` file, add the image path to the project entry:
+1. Add your profile image to this directory (e.g., `profile.jpg`, `profile.png`)
+2. For best results, use a square image (1:1 aspect ratio)
+3. Recommended size: 400x400px or 600x600px
+4. The image will be displayed in a circular format with a border
 
-```json
-{
-  "title": "Your Project Title",
-  "description": "Project description",
-  "tech": ["Tech1", "Tech2"],
-  "github": "https://github.com/username/project",
-  "demo": "https://project-demo.example.com",
-  "image": "/images/projects/your-image-filename.jpg"
-}
-```
+## Notes
 
-3. If an image path is provided, it will be displayed. If not, a stylized preview will be automatically generated based on the project's tech stack.
-
-## Image Recommendations
-
-- Use images with 16:9 or 4:3 aspect ratio for best results
-- Recommended size: 800x450px or 1200x675px
-- Supported formats: JPG, PNG, WebP, GIF
-- Keep file sizes under 200KB for optimal loading performance
+- Your profile image path is specified in the `personal.json` file
+- If no image is provided, a stylized avatar will be displayed instead

@@ -35,7 +35,7 @@ yarn-error.log*
 *.log
 
 # Mac system files
-.DS_Store
+*.DS_Store
 
 # Windows system files
 Thumbs.db

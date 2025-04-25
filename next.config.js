@@ -26,9 +26,12 @@ const nextConfig = {
       },
     ];
   },
-  // Enable this if you need to use image optimization
+  // Image optimization configuration
   images: {
     domains: [],
+    formats: ['image/avif', 'image/webp'],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 };
 

@@ -1,6 +1,17 @@
+import Image from 'next/image';
 import personalData from '../data/personal.json';
+import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
+  // Use client-side state to track image loading
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
+  
+  // Reset states on client-side render
+  useEffect(() => {
+    setImageLoaded(false);
+    setImageError(false);
+  }, []);
   const scrollToProjects = () => {
     const element = document.getElementById('projects');
     if (element) {
@@ -47,24 +58,44 @@ export default function HeroSection() {
           </div>
         </div>
         
-        <div className="hidden md:block relative">
-          <div className="relative z-10 bg-white dark:bg-slate-800 p-3 rounded-lg shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
-            <div className="aspect-w-16 aspect-h-9 bg-gradient-to-br from-blue-100 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 rounded-lg overflow-hidden">
-              <div className="p-4 text-center">
-                <div className="w-full h-8 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"></div>
-                <div className="flex space-x-2 mb-4 justify-center">
-                  <div className="w-20 h-6 bg-blue-500 rounded-full"></div>
-                  <div className="w-20 h-6 bg-indigo-500 rounded-full"></div>
+        <div className="flex justify-center relative md:order-last order-first mb-8 md:mb-0">
+          <div className="relative z-10 profile-glow">
+            {/* Profile Image with Fallback */}
+            <div className="w-80 h-80 rounded-full border-4 border-blue-500 dark:border-blue-400 p-1 shadow-xl overflow-hidden">
+              {!imageError && personalData.profileImage ? (
+                <>
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={personalData.profileImage}
+                      alt={`${personalData.name} profile`}
+                      width={320}
+                      height={320}
+                      className={`rounded-full object-cover image-transition ${imageLoaded ? 'image-loaded' : 'image-loading'}`}
+                      onLoad={() => setImageLoaded(true)}
+                      onError={() => setImageError(true)}
+                      priority
+                    />
+                  </div>
+                  
+                  {/* Show fallback while image is loading */}
+                  {!imageLoaded && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-100 to-indigo-50 dark:from-blue-900 dark:to-indigo-900">
+                      <span className="text-8xl font-bold text-blue-600 dark:text-blue-400">
+                        {personalData.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-blue-100 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 flex items-center justify-center">
+                  <span className="text-8xl font-bold text-blue-600 dark:text-blue-400">
+                    {personalData.name.charAt(0)}
+                  </span>
                 </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-white dark:bg-slate-600 h-20 rounded-lg shadow-sm"></div>
-                  <div className="bg-white dark:bg-slate-600 h-20 rounded-lg shadow-sm"></div>
-                  <div className="bg-white dark:bg-slate-600 h-20 rounded-lg shadow-sm"></div>
-                  <div className="bg-white dark:bg-slate-600 h-20 rounded-lg shadow-sm"></div>
-                </div>
-              </div>
+              )}
             </div>
           </div>
+          {/* Decorative glow */}
           <div className="absolute top-8 -right-8 w-72 h-72 bg-blue-500/20 dark:bg-blue-500/10 rounded-full filter blur-3xl z-0"></div>
         </div>
       </div>
